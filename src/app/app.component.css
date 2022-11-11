@@ -37,5 +37,8 @@
   display: flex;
   flex-direction: column;
 }
+.mainContainer > div {
+  display: flex;
+}
 
 /*# sourceMappingURL=app.component.css.map */

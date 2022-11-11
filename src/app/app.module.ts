@@ -7,18 +7,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { BooksComponent } from './books/books.component';
+import {RouterOutlet} from "@angular/router";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavBarComponent
+    NavBarComponent,
+    BooksComponent
   ],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
 		BrowserAnimationsModule,
 		MatIconModule,
+		RouterOutlet,
 	],
   providers: [],
   bootstrap: [AppComponent]
