@@ -1,6 +1,50 @@
 .header-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   height: 85px;
+  justify-content: space-between;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px;
+  box-sizing: border-box;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.header-container div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+.header-container div:first-of-type > * {
+  cursor: pointer;
+}
+.header-container div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container div:nth-child(2) img {
+  height: 60px;
+  cursor: pointer;
+}
+.header-container div:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-inline-end: 30px;
+}
+.header-container div:last-of-type img {
+  padding-inline-end: 4px;
+  cursor: pointer;
+}
+.header-container > div {
+  display: flex;
+  align-items: center;
+}
+.header-container * {
+  max-height: 85px;
 }
 
 /*# sourceMappingURL=header.component.css.map */
