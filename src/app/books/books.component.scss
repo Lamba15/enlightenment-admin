@@ -1,0 +1,41 @@
+.book-table-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+.table-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw - 170px);
+
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  background: #514230;
+}
+
+
+
+.inner-book-table-container{
+  overflow-x: scroll;
+  width: calc(100vw - 180px);
+
+  table{
+    width: max-content;
+
+
+    td,th {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+}
